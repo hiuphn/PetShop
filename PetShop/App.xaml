@@ -1,0 +1,42 @@
+﻿<Application x:Class="PetShop.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+              xmlns:theme="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Aero2"
+             xmlns:local="clr-namespace:PetShop"       
+             StartupUri="MainWindow.xaml"
+             
+    xmlns:wpf="clr-namespace:MaterialDesignThemes.Wpf;assembly=MaterialDesignThemes.Wpf">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Light.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/MaterialDesignColor.DeepPurple.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Accent/MaterialDesignColor.Lime.xaml" />
+                <ResourceDictionary Source="/ResourceXAML/MainResource.xaml"></ResourceDictionary>
+                <ResourceDictionary Source="Themes/ButtonTheme.xaml"></ResourceDictionary>
+                <ResourceDictionary Source="Themes/TextblockSearchTheme.xaml"></ResourceDictionary>
+                <ResourceDictionary Source="Themes/TextBoxInput.xaml"></ResourceDictionary>
+                <ResourceDictionary Source="Themes/Radiobutton.xaml"></ResourceDictionary>
+                <ResourceDictionary Source="Themes/GridEditButton.xaml"></ResourceDictionary>
+                <ResourceDictionary Source="Themes/GridRemoveButton.xaml"></ResourceDictionary>
+                <ResourceDictionary Source="Themes/GridButtonIcon.xaml"></ResourceDictionary>
+                <ResourceDictionary Source="Themes/GridEyeButton.xaml"></ResourceDictionary>
+                <ResourceDictionary Source="Themes/DataGridCustomer/DataGridStyle.xaml"></ResourceDictionary>
+                <ResourceDictionary Source="Themes/DataGridCustomer/DataGridCellStyle.xaml"></ResourceDictionary>
+                <ResourceDictionary Source="Themes/DataGridCustomer/DataGridRowStyle.xaml"></ResourceDictionary>
+                <ResourceDictionary Source="Themes/DataGridCustomer/ColumnHeaderGripperStyle.xaml"></ResourceDictionary>
+                <ResourceDictionary Source="Themes/DataGridCustomer/DataGridColumnHeaderStyle.xaml"></ResourceDictionary>
+                <ResourceDictionary Source="Themes/DataGridInputProduct/DataGridCellStyle1.xaml"></ResourceDictionary>
+                <ResourceDictionary Source="Themes/DataGridInputProduct/DataGridColumnHeaderStyle1.xaml"></ResourceDictionary>
+                <ResourceDictionary Source="Themes/DataGridInputProduct/DataGridRowStyle1.xaml"></ResourceDictionary>
+                <ResourceDictionary Source="Themes/DataGridInputProduct/DataGridStyle1.xaml"></ResourceDictionary>
+                <ResourceDictionary Source="Themes/DatePickerStyle.xaml"></ResourceDictionary>
+                <ResourceDictionary Source="Themes/Button1.xaml"></ResourceDictionary>
+                <ResourceDictionary Source="Themes/Button2.xaml"></ResourceDictionary>
+                <ResourceDictionary Source="Themes/Button3.xaml"></ResourceDictionary>
+                <ResourceDictionary Source="Themes/Button4.xaml"></ResourceDictionary>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
