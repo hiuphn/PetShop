@@ -40,7 +40,7 @@
                 <Setter Property="Foreground" Value="#ffffff"/>
             </Trigger>
             <Trigger Property="IsSelected" Value="True">
-                <Setter Property="Background" Value="#373737"/>
+                <Setter Property="Background" Value="Transparent"/>
                 <Setter Property="Foreground" Value="#ffffff"/>
             </Trigger>
             <MultiTrigger>

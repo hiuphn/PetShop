@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PetShop"
         mc:Ignorable="d"
-        Title="InputProduct" Height="450" Width="850" WindowStartupLocation="CenterScreen">
+        Title="InputProduct" Height="450" Width="900" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="0.5*"></ColumnDefinition>
@@ -15,9 +15,9 @@
             <DockPanel>
                 <StackPanel Margin="20 35 10 0">
                     <TextBlock Text="Tên Sản Phẩm" Foreground="White" FontSize="14"></TextBlock>
-                    <TextBox CaretBrush="White" Foreground="White" Background="Transparent" BorderThickness="2" BorderBrush="White" ForceCursor="True" VerticalAlignment="Center" IsEnabled="False"></TextBox>
+                    <TextBox  Foreground="White" Background="Transparent" BorderThickness="2" BorderBrush="White" ForceCursor="True" VerticalAlignment="Center" IsEnabled="False"></TextBox>
                     <TextBlock Text="Ngày Nhập" Foreground="White" FontSize="14" Margin="0 5 0 0"  ></TextBlock>
-                    <DatePicker BorderBrush="White" IsEnabled="False" ></DatePicker>
+                    <DatePicker BorderBrush="White" IsEnabled="False" BorderThickness="2" ></DatePicker>
                     <TextBlock Text="Số lượng" Foreground="White" FontSize="14" Margin="0 5 0 0" ForceCursor="True"></TextBlock>
                     <TextBox CaretBrush="White" Foreground="White" Background="Transparent" BorderThickness="2" BorderBrush="White" ForceCursor="True" VerticalAlignment="Center" IsEnabled="False"></TextBox>
                     <TextBlock Text="Giá Nhập" Foreground="White" FontSize="14" Margin="0 5 0 0" ForceCursor="True"></TextBlock>
@@ -38,14 +38,14 @@
             </DockPanel>
         </Grid>
         <Grid Grid.Column="1">
-            <DataGrid Style="{StaticResource DataGridStyle1}" CellStyle="{DynamicResource DataGridCellStyle1}" RowStyle="{DynamicResource DataGridRowStyle1}" ColumnHeaderStyle="{DynamicResource DataGridColumnHeaderStyle1}"  x:Name="inputProduct" >
+            <DataGrid x:Name="inputProduct" Style="{StaticResource DataGridStyle1}" CellStyle="{DynamicResource DataGridCellStyle1}" RowStyle="{DynamicResource DataGridRowStyle1}" ColumnHeaderStyle="{DynamicResource DataGridColumnHeaderStyle1}" >
                 <DataGrid.Columns>
-                    <DataGridTextColumn Header="Sản Phẩm" IsReadOnly="True" Width="auto"></DataGridTextColumn>
-                    <DataGridTextColumn Header="Ngày Nhập" IsReadOnly="True" Width="auto"></DataGridTextColumn>
-                    <DataGridTextColumn Header="Số Lượng" IsReadOnly="True" Width="auto"></DataGridTextColumn>
-                    <DataGridTextColumn Header="Giá Nhập" IsReadOnly="True" Width="auto"></DataGridTextColumn>
-                    <DataGridTextColumn Header="Giá Xuất" IsReadOnly="True" Width="auto"></DataGridTextColumn>
-                    <DataGridTextColumn Header="Trạng Thái Nhập" IsReadOnly="True" Width="auto"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Sản Phẩm" IsReadOnly="True" Width="auto" Binding="{Binding TenSP}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Ngày Nhập" IsReadOnly="True" Width="auto" Binding="{Binding Date}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Số Lượng" IsReadOnly="True" Width="auto" Binding="{Binding SL}" ></DataGridTextColumn>
+                    <DataGridTextColumn Header="Giá Nhập" IsReadOnly="True" Width="auto" Binding="{Binding GN}" ></DataGridTextColumn>
+                    <DataGridTextColumn Header="Giá Xuất" IsReadOnly="True" Width="auto" Binding="{Binding GX}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Trạng Thái Nhập" IsReadOnly="True" Width="auto" Binding="{Binding TTNhap}"></DataGridTextColumn>
                 </DataGrid.Columns>
             </DataGrid>
         </Grid>

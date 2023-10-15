@@ -17,7 +17,7 @@
      Background="{DynamicResource MaterialDesignPaper}"
      FontFamily="{DynamicResource MaterialDesignFont}"
         DataContext="{StaticResource MainVM}"
-        Title="MainWindow" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+        Title="MainWindow" Height="450" Width="900" WindowStartupLocation="CenterScreen">
     <Grid>
         <!--<Grid.ColumnDefinitions>
             <ColumnDefinition/> 
@@ -133,7 +133,7 @@
                             <Button Content="Add" Style="{StaticResource ButtonStyle4}" Click="Button_Click" />
                         </DockPanel>
                     </Grid>
-                    <DataGrid Style="{DynamicResource DataGridStyle}" Margin="10" RowStyle="{StaticResource DataGridRowStyle}" ColumnHeaderStyle="{DynamicResource DataGridColumnHeaderStyle}" CellStyle="{DynamicResource DataGridCellStyle}" x:Name="membersDataGrid"  Grid.Row="1">
+                    <DataGrid  x:Name="membersDataGrid" Style="{StaticResource DataGridStyle}" CellStyle="{DynamicResource DataGridCellStyle}" RowStyle="{DynamicResource DataGridRowStyle}" ColumnHeaderStyle="{DynamicResource DataGridColumnHeaderStyle}" Grid.Row="1">
                         <DataGrid.Columns>
                             <DataGridTextColumn Header="Mã KH" Binding="{Binding CustomerID}"  IsReadOnly="True" Width="auto">
                             </DataGridTextColumn>

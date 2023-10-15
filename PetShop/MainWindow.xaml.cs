@@ -27,7 +27,7 @@ namespace PetShop
 
             var converter = new BrushConverter();
             ObservableCollection<Member> members = new ObservableCollection<Member>();
-            members.Add(new Member { CustomerID = "1231414141241", Name = "Nguyen van A", Address = "Quan 2, Tp Thủ Đức", DateCreate = "10/10/2023", Phone = "0909027838" });
+            members.Add(new Member { CustomerID = "1", Name = "Nguyen van A", Address = "Quan 2, Tp Thủ Đức", DateCreate = "10/10/2023", Phone = "0909027838" });
             members.Add(new Member { CustomerID = "2", Name = "Lam van C", Address = "Quan 2, Tp Thủ Đức", DateCreate = "10/10/2023", Phone = "0938276328" });
             members.Add(new Member { CustomerID = "3", Name = "Tran thin", Address = "Quan 2, Tp Thủ Đức", DateCreate = "10/10/2023", Phone = "0937462819" });
             members.Add(new Member { CustomerID = "4", Name = "Tran thin", Address = "Quan 2, Tp Thủ Đức", DateCreate = "10/10/2023", Phone = "0937462819" });
@@ -43,6 +43,8 @@ namespace PetShop
             members.Add(new Member { CustomerID = "15", Name = "Tran thin", Address = "Quan 2, Tp Thủ Đức", DateCreate = "10/10/2023", Phone = "0937462819" });
             members.Add(new Member { CustomerID = "16", Name = "Tran thin", Address = "Quan 2, Tp Thủ Đức", DateCreate = "10/10/2023", Phone = "0937462819" });
             membersDataGrid.ItemsSource = members;
+
+            
         }
         private bool IsMaximize = false;
         private void Border_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
@@ -76,7 +78,7 @@ namespace PetShop
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            InputProduct ctm = new InputProduct();
+            Input ctm = new Input();
             ctm.ShowDialog();
         }
 
@@ -94,4 +96,5 @@ namespace PetShop
         public string Phone { get; set; }
         public string DateCreate { get; set; }
     }
+    
 }

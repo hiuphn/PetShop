@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PetShop"
         mc:Ignorable="d"
-        Title="Input" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+        Title="Input" Height="450" Width="850" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="0.5*"></ColumnDefinition>
@@ -34,11 +34,11 @@
             </DockPanel>
         </Grid>
         <Grid Grid.Column="1">
-            <DataGrid Style="{StaticResource DataGridStyle1}" CellStyle="{DynamicResource DataGridCellStyle1}" RowStyle="{DynamicResource DataGridRowStyle1}" ColumnHeaderStyle="{DynamicResource DataGridColumnHeaderStyle1}"  x:Name="inputProduct" >
+            <DataGrid x:Name="input" Style="{StaticResource DataGridStyle1}" CellStyle="{DynamicResource DataGridCellStyle1}" RowStyle="{DynamicResource DataGridRowStyle1}" ColumnHeaderStyle="{DynamicResource DataGridColumnHeaderStyle1}"  >
                 <DataGrid.Columns>
-                    <DataGridTextColumn Header="Sản Phẩm" IsReadOnly="True" Width="auto"></DataGridTextColumn>
-                    <DataGridTextColumn Header="Số Lượng" IsReadOnly="True" Width="auto"></DataGridTextColumn>
-                    <DataGridTextColumn Header="Giá Nhập" IsReadOnly="True" Width="auto"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Sản Phẩm" IsReadOnly="True" Width="auto" Binding="{Binding TenSP}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Số Lượng" IsReadOnly="True" Width="auto" Binding="{Binding SL}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Giá Nhập" IsReadOnly="True" Width="auto" Binding="{Binding GN}"></DataGridTextColumn>
                 </DataGrid.Columns>
             </DataGrid>
         </Grid>
